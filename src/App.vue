@@ -30,17 +30,23 @@ const images = [
               <a href="">Order Now</a>
           </div>
       </div>
-      <div id="welcome" class="bg-black text-white">test</div>
+      <div id="welcome" class="dark">
+          <h1 class="text-4xl mb-10">Welcome to Knuckle Sandwiches!</h1>
+          <div class="border-l-2 text-xl">We are not your typical sandwich shop. All of our meats are made in-house with our family recipes. We have been in the Mesa, AZ area since 2019 and have become a familiar favorite. With so many options to choose from; sandwiches, subs, salads, wraps, and more! Stop in today to order something fresh and new! </div>
+      </div>
       <div id="menu"></div>
-      <div id="order" class="bg-black text-white"></div>
+      <div id="order" class="dark"></div>
       <div id="social"></div>
-      <div id="footer" class="bg-black text-white"></div>
+      <div id="footer" class="dark"></div>
   </div>
 </template>
 
 <style scoped>
 #banner {
     position: relative;
+}
+.dark {
+    @apply bg-black text-white text-center px-60 py-20;
 }
 a {
     @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold;
