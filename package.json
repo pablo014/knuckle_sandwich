@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "vue": "^3.3.4",
+    "vue3-rich-accordion": "^0.0.7",
     "vueperslides": "^3.5.1"
   },
   "devDependencies": {

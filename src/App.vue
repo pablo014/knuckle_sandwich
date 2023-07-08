@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
+import { AccordionList, AccordionItem } from 'vue3-rich-accordion'
 
 const images = [
     './src/assets/sandwich/blatt.webp',
@@ -34,7 +35,20 @@ const images = [
           <h1 class="text-4xl mb-10">Welcome to Knuckle Sandwiches!</h1>
           <div class="border-l-2 text-xl">We are not your typical sandwich shop. All of our meats are made in-house with our family recipes. We have been in the Mesa, AZ area since 2019 and have become a familiar favorite. With so many options to choose from; sandwiches, subs, salads, wraps, and more! Stop in today to order something fresh and new! </div>
       </div>
-      <div id="menu"></div>
+      <div id="menu">
+          <accordion-list>
+              <accordion-item>
+                  <template #summary>
+                      <div class="menu-header">test</div>
+                  </template>
+                  <h3>Main content</h3>
+              </accordion-item>
+              <accordion-item>
+                  <template #summary>Item summary</template>
+                  <h3>Main content</h3>
+              </accordion-item>
+          </accordion-list>
+      </div>
       <div id="order" class="dark"></div>
       <div id="social"></div>
       <div id="footer" class="dark"></div>
@@ -52,5 +66,8 @@ a {
     @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold;
     border-color: #FF0000;
     border-width: 1px;
+}
+.menu-header {
+    @apply bg-gray-200;
 }
 </style>

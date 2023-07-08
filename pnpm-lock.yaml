@@ -27,10 +27,12 @@ specifiers:
   vitest: ^0.32.0
   vue: ^3.3.4
   vue-tsc: ^1.6.5
+  vue3-rich-accordion: ^0.0.7
   vueperslides: ^3.5.1
 
 dependencies:
   vue: 3.3.4
+  vue3-rich-accordion: 0.0.7_vue@3.3.4
   vueperslides: 3.5.1_vue@3.3.4
 
 devDependencies:
@@ -4581,6 +4583,14 @@ packages:
       '@vue/runtime-dom': 3.3.4
       '@vue/server-renderer': 3.3.4_vue@3.3.4
       '@vue/shared': 3.3.4
+
+  /vue3-rich-accordion/0.0.7_vue@3.3.4:
+    resolution: {integrity: sha512-DWq5PHx3vbohgOVLAqxi2JxX3zSPB6ka73ypesy6XxH5btZQs4fnCN5sNOidj6SoBT6fDS5OivevY5ZA+oYWhA==}
+    peerDependencies:
+      vue: ^3.2.31
+    dependencies:
+      vue: 3.3.4
+    dev: false
 
   /vueperslides/3.5.1_vue@3.3.4:
     resolution: {integrity: sha512-g/Lauv1svlSaERzLNeys0oeLmpDFiXkIa+lxg+lJma6m6wXqJKzKKVIi8Kvc95XPnl42n7PYYJyr0+FMV6WZGw==}
