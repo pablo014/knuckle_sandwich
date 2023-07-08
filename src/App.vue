@@ -2,12 +2,16 @@
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 import { AccordionList, AccordionItem } from 'vue3-rich-accordion'
+import menuList from './assets/json/menu.json'
 
 const images = [
     './src/assets/sandwich/blatt.webp',
     './src/assets/sandwich/fl_veggie.webp',
     './src/assets/sandwich/pastrami.webp',
 ];
+
+const breakfast = menuList.filter(item => item.section === 'breakfast')
+const sandwich = menuList.filter(item => item.section === 'sandwich')
 </script>
 
 <template>
@@ -39,13 +43,17 @@ const images = [
           <accordion-list>
               <accordion-item>
                   <template #summary>
-                      <div class="menu-header">test</div>
+                      <div class="menu-header">Breakfast</div>
                   </template>
-                  <h3>Main content</h3>
+                  <div v-for="item in breakfast">
+                      {{ item }}
+                  </div>
               </accordion-item>
               <accordion-item>
-                  <template #summary>Item summary</template>
-                  <h3>Main content</h3>
+                  <template #summary>Sandwich</template>
+                  <div v-for="item in sandwich">
+                      {{ item }}
+                  </div>
               </accordion-item>
           </accordion-list>
       </div>

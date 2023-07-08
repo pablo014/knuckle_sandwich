@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "B.L.A.T.T",
+    "section": "sandwich",
+    "description": "Bacon, Lettuce, Avocado, Turkey, Tomato and Mayo on a Brioche Bun",
+    "image": "src/assets/sandwich/blatt.webp"
+  },
+  {
+    "id": 2,
+    "name": "Four-Layer Veggie",
+    "section": "sandwich",
+    "description": "Hummus, Tomatoes, Avocado, Vegan Basil Pesto, Salt, Black Pepper and Olive Oil on Toasted Wheat Bread",
+    "image": "./src/assets/sandwich/fl_veggie.webp"
+  },
+  {
+    "id": 3,
+    "name": "Pastrami",
+    "section": "sandwich",
+    "description": "Swiss, Mayo, Deli Mustard, Corned Beef OR Pastrami and Pickles on Sliced Rye Bread",
+    "image": "./src/assets/sandwich/pastrami.webp"
+  },
+  {
+    "id": 4,
+    "name": "Breakfast Burritos",
+    "section": "breakfast",
+    "description": "Bacon, Lettuce, Avocado, Turkey, Tomato and Mayo on a Brioche Bun",
+    "image": "./src/assets/breakfast/Burrito.webp"
+  },
+  {
+    "id": 5,
+    "name": "Bagel Sandwiches",
+    "section": "breakfast",
+    "description": "Hummus, Tomatoes, Avocado, Vegan Basil Pesto, Salt, Black Pepper and Olive Oil on Toasted Wheat Bread",
+    "image": "./src/assets/breakfast/bagel_sandwich.webp"
+  },
+  {
+    "id": 6,
+    "name": "Meat Lovers Bowl",
+    "section": "breakfast",
+    "description": "Swiss, Mayo, Deli Mustard, Corned Beef OR Pastrami and Pickles on Sliced Rye Bread",
+    "image": "./src/assets/breakfast/m_bowls.webp"
+  },
+  {
+    "id": 7,
+    "name": "Breakfast Bowl",
+    "section": "breakfast",
+    "description": "Hummus, Tomatoes, Avocado, Vegan Basil Pesto, Salt, Black Pepper and Olive Oil on Toasted Wheat Bread",
+    "image": "./src/assets/breakfast/bowls.webp"
+  }
+]
