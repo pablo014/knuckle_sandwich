@@ -70,7 +70,13 @@ const isBreakfast = () => {
       </div>
       <div id="order" class="dark"></div>
       <div id="social"></div>
-      <div id="footer" class="dark"></div>
+      <div id="footer" class="dark">
+          <p>COPYRIGHT © 2023 KNUCKLE SANDWICHES - ALL RIGHTS RESERVED.</p>
+          <p>PROUDLY SERVING: MESA, EAST MESA, MESA GRANDE, REED PARK, DOBSON RANCH, LEHI & ALL SURROUNDING AREAS</p>
+          <p>1140 N HIGLEY RD #103 MESA, AZ</p>
+          <p>(480) 630-4132</p>
+          <p>Privacy Policy</p>
+      </div>
   </div>
 </template>
 
