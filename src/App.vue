@@ -121,12 +121,12 @@ const isBreakfast = () => {
     @apply bg-black text-white text-center sm:px-60 py-20 flex flex-col items-center;
 }
 a {
-    @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold;
+    @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold cursor-pointer;
     border-color: #FF0000;
     border-width: 1px;
 }
 .icon {
-    @apply p-3 cursor-pointer;
+    @apply p-3;
 }
 .menu-header {
     @apply bg-gray-200;
