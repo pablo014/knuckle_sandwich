@@ -42,8 +42,6 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 6.4.0
   '@fortawesome/vue-fontawesome': 3.0.3_4mhwavzfveoxqj3h5dtyilc35q
   vue: 3.3.4
-  vue3-rich-accordion: 0.0.7_vue@3.3.4
-  vueperslides: 3.5.1_vue@3.3.4
 
 devDependencies:
   '@rushstack/eslint-patch': 1.3.2
@@ -71,6 +69,8 @@ devDependencies:
   vite: 4.3.9_@types+node@18.16.19
   vitest: 0.32.4_jsdom@22.1.0
   vue-tsc: 1.8.3_typescript@5.0.4
+  vue3-rich-accordion: 0.0.7_vue@3.3.4
+  vueperslides: 3.5.1_vue@3.3.4
 
 packages:
 
@@ -4648,7 +4648,7 @@ packages:
       vue: ^3.2.31
     dependencies:
       vue: 3.3.4
-    dev: false
+    dev: true
 
   /vueperslides/3.5.1_vue@3.3.4:
     resolution: {integrity: sha512-g/Lauv1svlSaERzLNeys0oeLmpDFiXkIa+lxg+lJma6m6wXqJKzKKVIi8Kvc95XPnl42n7PYYJyr0+FMV6WZGw==}
@@ -4656,7 +4656,7 @@ packages:
       vue: ^2.6.14 || ^3.2.0
     dependencies:
       vue: 3.3.4
-    dev: false
+    dev: true
 
   /w3c-xmlserializer/4.0.0:
     resolution: {integrity: sha512-d+BFHzbiCx6zGfz0HyQ6Rg69w9k19nviJspaj4yNscGjrHu94sVP+aRm75yEbCh+r2/yR+7q6hux9LVtbuTGBw==}
