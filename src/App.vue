@@ -68,8 +68,41 @@ const isBreakfast = () => {
               </accordion-item>
           </accordion-list>
       </div>
-      <div id="order" class="dark"></div>
-      <div id="social"></div>
+      <div id="catering" class="dark">
+          <h1 class="text-5xl mb-4">Our Catering</h1>
+          <div class="border-l-2 text-xl p-2">
+              Whether you are in charge of a corporate event, birthday or holiday party in Mesa, AZ or surrounding areas, Knuckle Sandwiches catering is the right choice every time! Our options will have everyone smiling and wanting more. We bring the taste of our family tradition to you in every bite!
+          </div>
+          <a class="my-10">
+              ORDER CATERING
+          </a>
+          <div class="border-l-2 text-xl p-2">
+              Please Note: All catering orders require a 48-hour advance. 50% down required at time of order and the balance the day before the event. Call now to place your order!
+          </div>
+      </div>
+      <div id="social" class="flex flex-col items-center">
+          <div>LIKE, TWEET, IG, OR YELP US!</div>
+          <div class="flex flex-wrap">
+              <a href="https://www.facebook.com/625587264608410" class="m-5">
+                  <font-awesome-icon class="icon" icon="fa-brands fa-instagram" beat-fade size="2xl" />
+              </a>
+              <a href="https://www.instagram.com/knuckle_sandwiches.az/?hl=en" class="m-5">
+                  <font-awesome-icon class="icon" icon="fa-brands fa-facebook" beat-fade size="2xl" />
+              </a>
+              <a href="https://www.linkedin.com/company/knuckle-sandwiches-az/" class="m-5">
+                  <font-awesome-icon class="icon" :icon="['fab', 'linkedin']" beat-fade size="2xl" />
+              </a>
+              <a href="https://www.tiktok.com/@knucklesandwichesaz" class="m-5">
+                  <font-awesome-icon class="icon" :icon="['fab', 'tiktok']" beat-fade size="2xl" />
+              </a>
+              <a href="https://www.twitter.com/knucklesmesa" class="m-5">
+                  <font-awesome-icon class="icon" :icon="['fab', 'twitter']" beat-fade size="2xl" />
+              </a>
+              <a href="https://www.yelp.com/biz/knuckle-sandwiches-mesa" class="m-5">
+                  <font-awesome-icon class="icon" :icon="['fab', 'yelp']" beat-fade size="2xl" />
+              </a>
+          </div>
+      </div>
       <div id="footer" class="dark">
           <p>COPYRIGHT © 2023 KNUCKLE SANDWICHES - ALL RIGHTS RESERVED.</p>
           <p>PROUDLY SERVING: MESA, EAST MESA, MESA GRANDE, REED PARK, DOBSON RANCH, LEHI & ALL SURROUNDING AREAS</p>
@@ -91,6 +124,9 @@ a {
     @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold;
     border-color: #FF0000;
     border-width: 1px;
+}
+.icon {
+    @apply p-3 cursor-pointer;
 }
 .menu-header {
     @apply bg-gray-200;
