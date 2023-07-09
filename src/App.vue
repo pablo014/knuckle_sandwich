@@ -3,6 +3,7 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 import { AccordionList, AccordionItem } from 'vue3-rich-accordion'
 import menuList from './assets/json/menu.json'
+import MenuItem from "@/components/menu-item.vue";
 
 const images = [
     './src/assets/sandwich/blatt.webp',
@@ -12,6 +13,12 @@ const images = [
 
 const breakfast = menuList.filter(item => item.section === 'breakfast')
 const sandwich = menuList.filter(item => item.section === 'sandwich')
+
+const scrollIntoView = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+        behavior: 'smooth',
+    });
+}
 </script>
 
 <template>
@@ -24,15 +31,15 @@ const sandwich = menuList.filter(item => item.section === 'sandwich')
                       :key="i"
                       >
                   <template #content>
-                      <img class="w-full h-full" :src="slide" />
+                      <img class="w-full sm:h-full" :src="slide" />
                   </template>
               </vueper-slide>
           </vueper-slides>
-          <div class="absolute top-40 z-10 left-10 w-80">
+          <div class="absolute top-10 sm:top-40 z-10 left-10 w-80">
               <h1 class="text-5xl text-white mb-4">
                   The Better Sandwich Shop
               </h1>
-              <a href="">Order Now</a>
+              <a @click="scrollIntoView('menu')">Order Now</a>
           </div>
       </div>
       <div id="welcome" class="dark">
@@ -46,13 +53,13 @@ const sandwich = menuList.filter(item => item.section === 'sandwich')
                       <div class="menu-header">Breakfast</div>
                   </template>
                   <div v-for="item in breakfast">
-                      {{ item }}
+                      <MenuItem :menu="item"/>
                   </div>
               </accordion-item>
               <accordion-item>
                   <template #summary>Sandwich</template>
                   <div v-for="item in sandwich">
-                      {{ item }}
+                      <MenuItem :menu="item"/>
                   </div>
               </accordion-item>
           </accordion-list>
@@ -68,7 +75,7 @@ const sandwich = menuList.filter(item => item.section === 'sandwich')
     position: relative;
 }
 .dark {
-    @apply bg-black text-white text-center px-60 py-20;
+    @apply bg-black text-white text-center sm:px-60 py-20;
 }
 a {
     @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold;
@@ -77,5 +84,10 @@ a {
 }
 .menu-header {
     @apply bg-gray-200;
+}
+</style>
+<style>
+.vueperslides__parallax-wrapper {
+    height: 17rem !important;
 }
 </style>
