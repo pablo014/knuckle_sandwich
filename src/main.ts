@@ -2,7 +2,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
-import { useAccordion } from "vue3-rich-accordion";
 import "vue3-rich-accordion/accordion-library-styles.css";
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,4 +16,6 @@ import { faTwitter, faFacebook, faStackOverflow, faGithub, faInstagram, faLinked
 
 /* add icons to the library */
 library.add(faUserSecret, faTwitter, faFacebook, faStackOverflow, faGithub, faInstagram, faLinkedin, faTiktok, faYelp)
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(useAccordion).mount('#app')
+const app = createApp(App);
+app.component('font-awesome-icon', FontAwesomeIcon);
+app.mount('#app');

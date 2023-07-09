@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps, withDefault } from 'vue'
 export interface Menu {
     id: number;
     name: string;
