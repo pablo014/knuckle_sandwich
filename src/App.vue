@@ -6,9 +6,9 @@ import menuList from './assets/json/menu.json'
 import MenuItem from "@/components/menu-item.vue";
 
 const images = [
-    './assets/sandwich/blatt.webp',
-    './assets/sandwich/fl_veggie.webp',
-    './assets/sandwich/pastrami.webp',
+    'src/assets/sandwich/blatt.webp',
+    'src/assets/sandwich/fl_veggie.webp',
+    'src/assets/sandwich/pastrami.webp',
 ];
 
 const breakfast = menuList.filter(item => item.section === 'breakfast')
@@ -46,7 +46,7 @@ const isBreakfast = () => {
           </div>
       </div>
       <div id="welcome" class="dark">
-          <img src="./assets/logo.webp" alt="logo" class="max-h-96" />
+          <img src="@/assets/logo.webp" alt="logo" class="max-h-96" />
           <h1 class="text-4xl my-10">Welcome to Knuckle Sandwiches!</h1>
           <div class="border-l-2 text-xl p-2">We are not your typical sandwich shop. All of our meats are made in-house with our family recipes. We have been in the Mesa, AZ area since 2019 and have become a familiar favorite. With so many options to choose from; sandwiches, subs, salads, wraps, and more! Stop in today to order something fresh and new! </div>
       </div>
