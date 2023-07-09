@@ -19,6 +19,9 @@ const scrollIntoView = (id: string) => {
         behavior: 'smooth',
     });
 }
+const isBreakfast = () => {
+    return new Date().getHours() <= 10 && new Date().getHours() >= 7;
+}
 </script>
 
 <template>
@@ -36,19 +39,20 @@ const scrollIntoView = (id: string) => {
               </vueper-slide>
           </vueper-slides>
           <div class="absolute top-10 sm:top-40 z-10 left-10 w-80">
-              <h1 class="text-5xl text-white mb-4">
+              <h1 class="text-5xl mb-4">
                   The Better Sandwich Shop
               </h1>
               <a @click="scrollIntoView('menu')">Order Now</a>
           </div>
       </div>
       <div id="welcome" class="dark">
-          <h1 class="text-4xl mb-10">Welcome to Knuckle Sandwiches!</h1>
-          <div class="border-l-2 text-xl">We are not your typical sandwich shop. All of our meats are made in-house with our family recipes. We have been in the Mesa, AZ area since 2019 and have become a familiar favorite. With so many options to choose from; sandwiches, subs, salads, wraps, and more! Stop in today to order something fresh and new! </div>
+          <img src="./assets/logo.webp" alt="logo" class="max-h-96" />
+          <h1 class="text-4xl my-10">Welcome to Knuckle Sandwiches!</h1>
+          <div class="border-l-2 text-xl p-2">We are not your typical sandwich shop. All of our meats are made in-house with our family recipes. We have been in the Mesa, AZ area since 2019 and have become a familiar favorite. With so many options to choose from; sandwiches, subs, salads, wraps, and more! Stop in today to order something fresh and new! </div>
       </div>
       <div id="menu">
           <accordion-list>
-              <accordion-item>
+              <accordion-item :defaultOpened="isBreakfast()">
                   <template #summary>
                       <div class="menu-header">Breakfast</div>
                   </template>
@@ -56,7 +60,7 @@ const scrollIntoView = (id: string) => {
                       <MenuItem :menu="item"/>
                   </div>
               </accordion-item>
-              <accordion-item>
+              <accordion-item :defaultOpened="!isBreakfast()">
                   <template #summary>Sandwich</template>
                   <div v-for="item in sandwich">
                       <MenuItem :menu="item"/>
@@ -75,7 +79,7 @@ const scrollIntoView = (id: string) => {
     position: relative;
 }
 .dark {
-    @apply bg-black text-white text-center sm:px-60 py-20;
+    @apply bg-black text-white text-center sm:px-60 py-20 flex flex-col items-center;
 }
 a {
     @apply rounded-full hover:bg-red-500 p-1 text-xl font-bold;
