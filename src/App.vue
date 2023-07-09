@@ -80,7 +80,7 @@ const isBreakfast = () => {
               Please Note: All catering orders require a 48-hour advance. 50% down required at time of order and the balance the day before the event. Call now to place your order!
           </div>
       </div>
-      <div id="social" class="flex flex-col items-center">
+      <div id="social" class="flex flex-col items-center py-20">
           <div>LIKE, TWEET, IG, OR YELP US!</div>
           <div class="flex flex-wrap">
               <a href="https://www.facebook.com/625587264608410" class="m-5">
