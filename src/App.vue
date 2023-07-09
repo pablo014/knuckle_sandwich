@@ -6,9 +6,9 @@ import menuList from './assets/json/menu.json'
 import MenuItem from "@/components/menu-item.vue";
 
 const images = [
-    './src/assets/sandwich/blatt.webp',
-    './src/assets/sandwich/fl_veggie.webp',
-    './src/assets/sandwich/pastrami.webp',
+    './assets/sandwich/blatt.webp',
+    './assets/sandwich/fl_veggie.webp',
+    './assets/sandwich/pastrami.webp',
 ];
 
 const breakfast = menuList.filter(item => item.section === 'breakfast')
